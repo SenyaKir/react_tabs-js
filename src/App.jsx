@@ -15,7 +15,7 @@ export const App = () => {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
 
   function getActiveTitle(activeTitle) {
-    return tabs.find(tab => tab.id === activeTitle).title || tabs[0].title;
+    return tabs.find(tab => tab.id === activeTitle)?.title || tabs[0].title;
   }
 
   return (
